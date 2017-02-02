@@ -1,12 +1,12 @@
 { stdenv, fetchurl, openssl, findutils }:
 
-let version = "2.0.22"; in
+let version = "2.1.8"; in
 stdenv.mkDerivation {
   name = "libevent-${version}";
 
   src = fetchurl {
     url = "https://github.com/libevent/libevent/releases/download/release-${version}-stable/libevent-${version}-stable.tar.gz";
-    sha256 = "18qz9qfwrkakmazdlwxvjmw8p76g70n3faikwvdwznns1agw9hki";
+    sha256 = "1hhxnxlr0fsdv7bdmzsnhdz16fxf3jg2r6vyljcl3kj6pflcap4n";
   };
 
   outputs = [ "out" "dev" ];
